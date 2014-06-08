@@ -30,4 +30,12 @@ Pod::Spec.new do |s|
       rm.weak_frameworks = 'AdSupport', 'StoreKit'
       rm.frameworks = 'SystemConfiguration'
     end
+
+  s.subspec 'MMedia' do |mm|
+      mm.source_files = 'src/MMediaAdAdapter.{h,m}'
+      mm.dependency 'MillennialMediaSDK'
+      mm.dependency 'LARSAdController/Core'
+      mm.weak_frameworks = 'AdSupport', 'Social', 'StoreKit', 'PassKit'
+      mm.frameworks = 'AudioToolbox', 'AVFoundation', 'CoreTelephony', 'MessageUI', 'SystemConfiguration', 'CoreGraphics', 'EventKit', 'EventKitUI', 'Security', 'CFNetwork', 'CoreLocation', 'Foundation', 'MediaPlayer', 'MobileCoreServices', 'QuartzCore', 'UIKit'
+    end
 end

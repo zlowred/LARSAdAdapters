@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "TOLAdAdapter.h"
 #import "LARSAdController.h"
-#import "RevMobAds.framework/Headers/RevMobAds.h"
+#import <RevMobAds/RevMobAds.h>
 
 @interface RevMobAdAdapter : NSObject<TOLAdAdapter, RevMobAdsDelegate>
 
