@@ -24,10 +24,10 @@ Pod::Spec.new do |s|
     end
 
   s.subspec 'RevMob' do |rm|
-      im.source_files = 'src/RevMobAdAdapter.{h,m}'
-      im.dependency 'RevMob', :git => 'https://github.com/RevMob/sdk-ios-cocoapods.git'
-      im.dependency 'LARSAdController/Core'
-      im.weak_frameworks = 'AdSupport', 'StoreKit'
-      im.frameworks = 'SystemConfiguration'
+      rm.source_files = 'src/RevMobAdAdapter.{h,m}'
+      rm.dependency 'RevMob', :git => 'https://github.com/RevMob/sdk-ios-cocoapods.git'
+      rm.dependency 'LARSAdController/Core'
+      rm.weak_frameworks = 'AdSupport', 'StoreKit'
+      rm.frameworks = 'SystemConfiguration'
     end
 end
